@@ -1,3 +1,4 @@
+<!-- Pictures: 710 width of hegtht. Then 2nd thinnest black box in paint to border the picture. Then extend height to 750px. Text box starts at 610px, Arial 26-->
 <!DOCTYPE html>
 <html  style="height=100%">
 	<title>Georgios Gryparis</title>
@@ -21,7 +22,7 @@
 			<p>Biomedical engineer who likes electronics, neuroscience and algorithms.</p>
 		</div>
 		<div class="w3-bar-block">
-			<a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Projects</a> 
+			<a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Projects & Coursework</a> 
 			<a href="#notes" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-pencil-square-o fa-fw w3-margin-right"></i>Smaller Notes</a> 
 			<a href="CV.pdf" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Curriculum Vitae</a> 
 			<a href="mailto:george.gryparis@gmail.com" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>george.gryparis@gmail.com</a>
@@ -40,7 +41,7 @@
 		<div class="w3-container">
 			<span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
 			<div class="w3-container w3-round-xlarge">
-				<h1 style="color:rgba(241, 241, 241,1)"><b>Projects</b></h1>
+				<h1 style="color:rgba(241, 241, 241,1)"><b>Projects & Coursework</b></h1>
 				<div class="w3-section w3-bottombar w3-border-light-grey w3-padding-8">
 				</div>
 			</div>
@@ -49,21 +50,21 @@
 		
 		<!-- First Row-->
 		<div class="w3-row-padding" style="margin:1%">
-			<!--Artefact Suppression-->
+		<!-- PhD1 stuff-->
 			<div class="w3-quarter w3-container w3-margin-bottom">
 				<div class="w3-container w3-light-grey w3-round-xlarge">
-					<p style="text-align:center"><img border="0" alt="link to PDF" src="Artefact_sup_PCBA.png" style="width:100%"></p>
-					<!--<p style="text-align:center"><b>Novel Front-End for Artefact Suppression during DBS</b></p>-->
-					<span id="more_art" style="display:none">
-						<p style="text-align:center"> Individual project (masters thesis), working with the Drakakis Lab at Imperial College. A novel, non-linear, analog technique was devised to perform artefact suppression for recording during Deep Brain Stimulation. The novel technique was implemented on a PCB and used for experiments in Fall 2020.</p>
-					<p style="text-align:center"><a href="Non_Linear_Artefact_Suppression_Flowchart.pdf" target="_blank"> Simple Flowchart</a></p></span>
-					<p class="w3-hover-grey" onclick="myFunction('more_art','myBtn_art')" id="myBtn_art" style="text-align:center;font-size:80%;cursor:pointer">&#9661 Show more &#9661 </p>
+					<p style="text-align:center"><img border="0" alt="link to PDF" src="phd_progress_y1_0.png" style="width:100%"></p>
+					<span id="more_phd1" style="display:none">						
+						<p style="text-align:center"> During the first year of my PhD at Imperial College, I designed a versatile, high-precision, low power instrument for neural recordings during Deep Brain Stimulation. The device was tested and shown to fit the required specifications. An updated modular approach was also proposed and will be manufactured during the second year of my PhD. As part of the recording device, a novel modification was proposed and verified to the standard Bainter notch filter topology which allows the filter to be one-resistor tunable. </p>
+						<p style="text-align:center"><a href="PhD_Year_1_Presentation.pdf" target="blank">
+						Presentation</a></p></span>
+						<p class="w3-hover-grey" onclick="myFunction('more_phd1','myBtn_phd1')" id="myBtn_phd1" style="text-align:center;font-size:80%;cursor:pointer">&#9661 Show more &#9661 </p>
 				</div>
-				</div>
-			<!-- BMI CW-->
+			</div>
+<!-- BMI CW-->
 			<div class="w3-quarter w3-container w3-margin-bottom">
 		<div class="w3-container w3-light-grey w3-round-xlarge">
-			<p style="text-align:center"><img border="0" alt="link to PDF" src="position_decodingA.png" style="width:100%"></p>
+			<p style="text-align:center"><img border="0" alt="link to PDF" src="position_decoding0.png" style="width:100%"></p>
 			<!--<p style="text-align:center"><b>Predicting Hand Trajectories<br>from Neural Signals</b></p>-->
 			
 			<span id="more_BMI" style="display:none">
@@ -73,11 +74,23 @@
 				<a href="https://github.com/g-gryp/Neural_Decoder_Project" target="_blank"> Code</a></p></span>
 				<p class="w3-hover-grey" onclick="myFunction('more_BMI','myBtn_BMI')" id="myBtn_BMI" style="text-align:center;font-size:80%;cursor:pointer">&#9661 Show more &#9661 </p>
 		</div>
-	</div>
+	</div>			
+			<!--Artefact Suppression-->
+			<div class="w3-quarter w3-container w3-margin-bottom">
+				<div class="w3-container w3-light-grey w3-round-xlarge">
+					<p style="text-align:center"><img border="0" alt="link to PDF" src="Artefact_sup_PCB0.png" style="width:100%"></p>
+					<!--<p style="text-align:center"><b>Novel Front-End for Artefact Suppression during DBS</b></p>-->
+					<span id="more_art" style="display:none">
+						<p style="text-align:center"> Individual project (masters thesis), working with the Drakakis Lab at Imperial College. A novel, non-linear, analog technique was devised to perform artefact suppression for recording during Deep Brain Stimulation. The novel technique was implemented on a PCB and used for experiments in Fall 2020.</p>
+					<p style="text-align:center"><a href="Non_Linear_Artefact_Suppression_Flowchart.pdf" target="_blank"> Simple Flowchart</a></p></span>
+					<p class="w3-hover-grey" onclick="myFunction('more_art','myBtn_art')" id="myBtn_art" style="text-align:center;font-size:80%;cursor:pointer">&#9661 Show more &#9661 </p>
+				</div>
+				</div>
+			
 	<!-- Buggy stuff-->
 	<div class="w3-quarter w3-container w3-margin-bottom">
 		<div class="w3-container w3-light-grey w3-round-xlarge">
-			<p style="text-align:center"><img border="0" alt="link to PDF" src="Smart_Baby_BuggyA.png" style="width:100%"></p>
+			<p style="text-align:center"><img border="0" alt="link to PDF" src="Smart_Baby_Buggy0.png" style="width:100%"></p>
 			<!--<p style="text-align:center"><b>Smart Baby Buggy<br>for Visually Impaired Parents</b></p>-->
 			<span id="more_bug" style="display:none">
 				<p style="text-align:center">Group project that succeeded in the design and implementation of a "Smart Baby Buggy" with obstacle detection for visually impaired parents, using ultrasound, LiDAR and image processing.</p>
@@ -87,18 +100,6 @@
 				<p class="w3-hover-grey" onclick="myFunction('more_bug','myBtn_bug')" id="myBtn_bug" style="text-align:center;font-size:80%;cursor:pointer">&#9661 Show more &#9661 </p>
 		</div>
 	</div>
-	<!--Perfusion Bioreactor-->
-			<div class="w3-quarter w3-container w3-margin-bottom">
-				<div class="w3-container w3-light-grey w3-round-xlarge">
-					<p style="text-align:center"><img border="0" alt="link to PDF" src="perfusion_bioreactorA.png" style="width:100%"></p>
-					<!--<p style="text-align:center"><b>Perfusion Compression Bioreactor for 3D cell cultures</b></p>-->
-					<span id="more_perf" style="display:none">
-						<p style="text-align:center"> Design and realisation of high accuracy system applying strains to cultured cells. Currently, the device is used to investigate adipocyte mechanobiology in the Overby Lab at Imperial College.</p>
-						<p style="text-align:center"><a href="Perfusion_Compression_Bioreactor_Poster.pdf" target="_blank"> Poster</a><br>					
-						<a href="Perfusion_Compression_Bioreactor_Report.pdf" target="_blank"> Project Report.</a></p></span>
-						<p class="w3-hover-grey" onclick="myFunction('more_perf','myBtn_perf')" id="myBtn_perf" style="text-align:center;font-size:80%;cursor:pointer">&#9661 Show more &#9661 </p>
-				</div>
-			</div>
 	</div>
 	
 	<!-- Second Row-->
@@ -106,7 +107,7 @@
 		<!-- Pattern Rec stuff-->
 		<div class="w3-quarter w3-container w3-margin-bottom">
 			<div class="w3-container w3-light-grey w3-round-xlarge">
-				<p style="text-align:center"><img border="0" alt="link to PDF" src="Pattern_RecA.png" style="width:100%"></p>
+				<p style="text-align:center"><img border="0" alt="link to PDF" src="Pattern_Rec0.png" style="width:100%"></p>
 			<!--<p style="text-align:center"><b>Pattern Recognition using<br>Eigenfaces and Distance Metrics</b></p>-->
 				<span id="more_pat" style="display:none">						
 					<p style="text-align:center">Coursework, in groups of 2, for the "Pattern Recognition" masters level module at Imperial College. Investigates different methods of image recognition and retrieval on a 
@@ -121,7 +122,7 @@
 		<!-- BBB stuff-->
 		<div class="w3-quarter w3-container w3-margin-bottom">
 			<div class="w3-container w3-light-grey w3-round-xlarge">
-				<p style="text-align:center"><img border="0" alt="link to PDF" src="Reinforcement_LearningA.png" style="width:100%"></p>
+				<p style="text-align:center"><img border="0" alt="link to PDF" src="Reinforcement_Learning0.png" style="width:100%"></p>
 			<!--<p style="text-align:center"><b>Reinforcement Learning:<br> MDPs, Gridworlds & Easy21</b></p>-->
 				<span id="more_bbb" style="display:none">						
 					<p style="text-align:center">Individual coursework for the "Reinforcement Learning" masters level module at Imperial College. Includes using reinforcement learning algorithms on a simple gridworlds excersise and the Easy21 card game devised by David Silver (currently at Deepmind). Code is appended at the end of each part of the report.</p>
@@ -136,25 +137,23 @@
 					<p class="w3-hover-grey" onclick="myFunction('more_bbb','myBtn_bbb')" id="myBtn_bbb" style="text-align:center;font-size:80%;cursor:pointer">&#9661 Show more &#9661 </p>
 			</div>
 		</div>
-		<!-- UROP stuff-->
-		<div class="w3-quarter w3-container w3-margin-bottom">
-			<div class="w3-container w3-light-grey w3-round-xlarge">
-				<p style="text-align:center"><img border="0" alt="link to PDF" src="Transimpedance_ampA.png" style="width:100%"></p>
-				<!--<p style="text-align:center"><b>Instrument for Measurement<br>of Bioelectric Signals </b></p>--> 
-				<span id="more_urop" style="display:none">						
-					<p style="text-align:center">Summer project in the Drakakis lab at Imperial College. Theoretical analysis, design, and layout of a 3 channel PCB. Includes intefacing with high impedance sensors and measurement of pA currents. </p>
-					<p style="text-align:center"><a href="Potentiometric_&_Transimpedance_Amplifiers_for_Bioelectric_signals_Analysis_&_Implementation.pdf" target="_blank">
-					Project Report</a></p></span>
-					<p class="w3-hover-grey" onclick="myFunction('more_urop','myBtn_urop')" id="myBtn_urop" style="text-align:center;font-size:80%;cursor:pointer">&#9661 Show more &#9661 </p>
+		<!--Perfusion Bioreactor-->
+			<div class="w3-quarter w3-container w3-margin-bottom">
+				<div class="w3-container w3-light-grey w3-round-xlarge">
+					<p style="text-align:center"><img border="0" alt="link to PDF" src="perfusion_bioreactor0.png" style="width:100%"></p>
+					<!--<p style="text-align:center"><b>Perfusion Compression Bioreactor for 3D cell cultures</b></p>-->
+					<span id="more_perf" style="display:none">
+						<p style="text-align:center"> Design and realisation of high accuracy system applying strains to cultured cells. Currently, the device is used to investigate adipocyte mechanobiology in the Overby Lab at Imperial College.</p>
+						<p style="text-align:center"><a href="Perfusion_Compression_Bioreactor_Poster.pdf" target="_blank"> Poster</a><br>					
+						<a href="Perfusion_Compression_Bioreactor_Report.pdf" target="_blank"> Project Report.</a></p></span>
+						<p class="w3-hover-grey" onclick="myFunction('more_perf','myBtn_perf')" id="myBtn_perf" style="text-align:center;font-size:80%;cursor:pointer">&#9661 Show more &#9661 </p>
+				</div>
 			</div>
-		</div>
 		<!--<a href="" target="blank"></a>
 		<!-- Extra Material stuff-->
 		<div class="w3-quarter w3-container w3-margin-bottom">
 			<div class="w3-container w3-light-grey w3-round-xlarge">
-				<p style="text-align:center"><img border="0" alt="link to PDF" src="Schematic_and_blockA.png" style="width:100%"></p>
-				<!--
-				<p style="text-align:center"><b>From Schematics<br>to Block Diagrams</b></p>-->
+				<p style="text-align:center"><img border="0" alt="link to PDF" src="Schematic_and_block0.png" style="width:100%"></p>
 				<span id="more_sch" style="display:none">						
 					<p style="text-align:center">Supplementary material for the "Signals & Control" and "Electrical Engineering 2" module at the department of Biongineering. Bridges the gap between the two modules. Includes excerises (both pen & paper and MATLAB).</p>
 					<p style="text-align:center"><a href="From_Schematics_to_block_diagrams.pdf" target="blank">
@@ -162,6 +161,21 @@
 					<p class="w3-hover-grey" onclick="myFunction('more_sch','myBtn_sch')" id="myBtn_sch" style="text-align:center;font-size:80%;cursor:pointer">&#9661 Show more &#9661 </p>
 			</div>
 		</div>			
+	</div>
+	
+		<!-- Third Row-->
+	<div class="w3-row-padding" style="margin:1%">
+			<!-- UROP stuff-->
+		<div class="w3-quarter w3-container w3-margin-bottom">
+			<div class="w3-container w3-light-grey w3-round-xlarge">
+				<p style="text-align:center"><img border="0" alt="link to PDF" src="Transimpedance_amp0.png" style="width:100%"></p>
+				<span id="more_urop" style="display:none">						
+					<p style="text-align:center">Summer project in the Drakakis lab at Imperial College. Theoretical analysis, design, and layout of a 3 channel PCB. Includes intefacing with high impedance sensors and measurement of pA currents. </p>
+					<p style="text-align:center"><a href="Potentiometric_&_Transimpedance_Amplifiers_for_Bioelectric_signals_Analysis_&_Implementation.pdf" target="_blank">
+					Project Report</a></p></span>
+					<p class="w3-hover-grey" onclick="myFunction('more_urop','myBtn_urop')" id="myBtn_urop" style="text-align:center;font-size:80%;cursor:pointer">&#9661 Show more &#9661 </p>
+			</div>
+		</div>
 	</div>
 	
 	
@@ -180,7 +194,7 @@
 		<!-- AC coupling stuff-->
 		<div class="w3-quarter w3-container w3-margin-bottom">
 			<div class="w3-container w3-light-grey w3-round-xlarge">
-				<p style="text-align:center"><img border="0" alt="link to PDF" src="INA_simpleA.png" style="width:100%"></p>
+				<p style="text-align:center"><img border="0" alt="link to PDF" src="INA_simple0.png" style="width:100%"></p>
 				<!--<p style="text-align:center"><b>Notes on AC coupling<br>Instrumentation Amplifiers</b></p>-->
 				<span id="more_ac" style="display:none">
 					<p style="text-align:center"> Personal notes on different ways of removing DC offset in differential measurements. Written during my undergraduate thesis on artefact suppression for recording of LFP signals during DBS.</p>
@@ -191,7 +205,7 @@
 		<!-- ASP stuff-->
 		<div class="w3-quarter w3-container w3-margin-bottom">
 			<div class="w3-container w3-light-grey w3-round-xlarge">
-				<p style="text-align:center"><img border="0" alt="link to PDF" src="estimatorsA.png" style="width:100%"></p>
+				<p style="text-align:center"><img border="0" alt="link to PDF" src="estimators0.png" style="width:100%"></p>
 				<!--<p style="text-align:center"><b>Notes on Simple Estimators</b><br><text style="color:rgb(241,241,241,0)">-</text></p>-->
 				<span id="more_asp" style="display:none">	
 					<p style="text-align:center"> Personal notes that expand on the concepts in the first part of the "Advanced Signal Processing" module at Imperial College. Includes some discussion on the optimal number of bins for histogram estimation of a normal distribution.</p>
@@ -212,17 +226,41 @@
 	function w3_close() {
 		document.getElementById("mySidebar").style.display = "none";
 		document.getElementById("myOverlay").style.display = "none";
+		fun_close_all()
 	}
+	
+	function fun_close(more_num1,myBtn_num1) {
+		var moreText1 = document.getElementById(more_num1);
+		var btnText1 = document.getElementById(myBtn_num1);
+		btnText1.innerHTML = "&#9661 Show more &#9661";  
+		moreText1.style.display = "none";
+	}
+	
+	function fun_close_all() {
+		fun_close('more_BMI','myBtn_BMI')
+		fun_close('more_ac','myBtn_ac')
+		fun_close('more_art','myBtn_art')
+		fun_close('more_asp','myBtn_asp')
+		fun_close('more_bbb','myBtn_bbb')
+		fun_close('more_bug','myBtn_bug')
+		fun_close('more_pat','myBtn_pat')
+		fun_close('more_perf','myBtn_perf')
+		fun_close('more_phd1','myBtn_phd1')
+		fun_close('more_sch','myBtn_sch')
+		fun_close('more_urop','myBtn_urop')
+	}
+	
 	function myFunction(more_num,myBtn_num) {
 		var moreText = document.getElementById(more_num);
 		var btnText = document.getElementById(myBtn_num);
-		
+		var check = 1;
 		if (moreText.style.display === "none"){
+			check = 0;
+		}
+		fun_close_all()
+		if (check === 0){
 			btnText.innerHTML = "&#9651 Show less &#9651"; 
 			moreText.style.display = "inline";
-			} else {
-			btnText.innerHTML = "&#9661 Show more &#9661";  
-			moreText.style.display = "none";
 		}
 	}
 </script>
